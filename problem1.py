@@ -21,9 +21,13 @@ def tests():
     assert convertTemp(32,'F') == 0.00
     assert convertTemp(100,'C') == 212.00
     assert convertTemp(100,'F') == 37.78
-    
-    
-
-
-if __name__== "__main__":
-    tests()
+    def triangle(x, y, z):
+        def convertTemp(a, b):
+    if b == "C":
+        F = a * (9/5) + 32
+        F = round(F, 2)
+        return F
+    elif b == "F":
+        C = (a - 32) * (5/9)
+        C = round(C, 2)
+        return C

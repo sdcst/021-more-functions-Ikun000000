@@ -33,3 +33,19 @@ def tests():
 
 if __name__== "__main__":
     tests()
+def triangle(x, y, z):
+    triangle = [x, y, z]
+    triangle.sort()
+    a = triangle[0]
+    b = triangle[1]
+    c = triangle[2]
+    if a + b < c:
+        return 0
+    elif a ** 2 + b ** 2 < c ** 2:
+        return 3
+    elif a ** 2 + b ** 2 > c ** 2:
+        return 1
+    elif a ** 2 + b ** 2 == c ** 2:
+        return 2
+    else: 
+        return 0
